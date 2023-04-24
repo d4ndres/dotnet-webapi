@@ -49,6 +49,7 @@ public class WeatherForecastController : ControllerBase
 
     public IEnumerable<WeatherForecast> Getx()
     {
+        _logger.LogInformation($"Todo chill perrors {listWeatherForcast[0]}");
         return listWeatherForcast;
     }
 
