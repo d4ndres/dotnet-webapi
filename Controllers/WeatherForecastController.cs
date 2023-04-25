@@ -39,13 +39,13 @@ public class WeatherForecastController : ControllerBase
     [HttpGet(Name = "GetWeatherForecast")]
     // Tambien puede funcionar
     // http://localhost:5293/api/weatherforecas/get/xd
-    [Route("get/xd")]
-    // O tambien si lo deseo por
-    // http://localhost:5293/api/weatherforecas/yolo
-    [Route("yolo")]
-    // O tambien puedo hacer uso del nombre del metodo
-    // http://localhost:5293/api/weatherforecas/yolo
-    [Route("[action]")]
+    // [Route("get/xd")]
+    // // O tambien si lo deseo por
+    // // http://localhost:5293/api/weatherforecas/yolo
+    // [Route("yolo")]
+    // // O tambien puedo hacer uso del nombre del metodo
+    // // http://localhost:5293/api/weatherforecas/yolo
+    // [Route("[action]")]
 
     public IEnumerable<WeatherForecast> Getx()
     {

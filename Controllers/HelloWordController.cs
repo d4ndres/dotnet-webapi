@@ -18,6 +18,8 @@ namespace webapi.Controllers
             this.helloworldService = helloworldService;
         }
         
+
+        [HttpGet]
         public IActionResult Get()
         {
             return Ok( helloworldService.getHelloWord() );
