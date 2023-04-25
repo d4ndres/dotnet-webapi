@@ -17,7 +17,7 @@ public class Categoria
     public int Peso { get; set; }
 
 
-    [JsonIgnore]
-    // Me permite traer todas las tareas que poseen esta categoria
-    public virtual ICollection<Tarea> Tareas { get; set; }
+    // [JsonIgnore]
+    // // Me permite traer todas las tareas que poseen esta categoria
+    // public virtual ICollection<Tarea> Tareas { get; set; }
 }

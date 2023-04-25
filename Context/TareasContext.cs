@@ -45,7 +45,6 @@ namespace _02_learn_entity_framework_core.Context
                 categoria.Property( p => p.Nombre ).IsRequired().HasMaxLength(150);
                 categoria.Property( p => p.Description ).IsRequired(false);
                 categoria.Property( p => p.Peso );
-
                 categoria.HasData( categoriaInit );
             });
 
@@ -74,7 +73,7 @@ namespace _02_learn_entity_framework_core.Context
             {
                 tarea.ToTable("Tarea");
                 tarea.HasKey( p => p.TareaId );
-                tarea.HasOne( p => p.Categoria ).WithMany( p => p.Tareas ).HasForeignKey( p => p.CategoriaId );
+                // tarea.HasOne( p => p.Categoria ).WithMany( p => p.Tareas ).HasForeignKey( p => p.CategoriaId );
                 tarea.Property( p => p.Titulo ).IsRequired().HasMaxLength(150);
                 tarea.Property( p => p.Description ).IsRequired(false);
                 tarea.Property( p => p.PrioridadTarea );
